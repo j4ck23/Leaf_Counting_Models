@@ -12,7 +12,7 @@ Each Folder contains the weights of the trained models so far. To access the pat
 
 Each folder contains one model. Each folder contains the data used to train and test the YOLO v11 model stored in the corresponding folder. If you wish to train a new model, simply replace the Train, Test, and Val folders and data.YAML file with the new dataset, and then run the Python file named the same as the folder. (E.G. strawberry.py in the strawberry folder)
 
---Note: if you retrain the model, the weights may be saved in a new location. It will still be under the runs/detect folder, but may now be stored in a train2 or train3 folder. If so, just change that section of the path when pointing to the weights. the subsequent path of weights and best.pt will remain the same. (I've not retrained a model and kept the old version, so I cannot say if the path for the weights will 100% move) 
+--Note: if you retrain the model, the weights may be saved in a new location. It will still be under the runs/detect folder, but may now be stored in a train2 or train3 folder. If so, just change that section of the path when pointing to the weights. the subsequent path of weights and best.pt will remain the same. (I've not retrained a model and kept the old version, so I cannot say if the path for the weights will 100% move, but keep this in mind if you train a new version and the accuracy does not increase!) 
 
 Each folder also contains a test script that lets you input a plant image to evaluate the model's accuracy.
 
