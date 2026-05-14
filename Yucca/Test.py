@@ -4,8 +4,8 @@ from collections import Counter
 import cv2 as cv
 
 
-img = cv.imread("yucca-480x640-v2.webp") #Change Here with own image#
-model = YOLO("runs/detect/train/weights/best.pt") #Loaded model weights
+img = cv.imread("yucca-480x640-v2.webp") #Change Here with own image
+model = YOLO("runs/detect/train/weights/best.pt") #Weight path (May need Changing if retrained)
 
 result = model.predict(img, save=True)
 labels = result[0].boxes.cls.cpu().numpy()
