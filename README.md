@@ -4,9 +4,9 @@ Leaf counting computer vision models of 5 types of plants using YOLO
 This Repo contains 5 YOLO v11 models for detecting and counting the leaves of 5 plants:
 1. Agapanthus praecox subsp. orientalis
 2. Fatsia japonica 'Tsumugi-shibori'
-3. Yucca aloifolia red experimental
+3. Fragaria × ananassa 'Malling Centenary'
 4. Solanum lycopersicum 'Totem'
-5. Fragaria × ananassa 'Malling Centenary'
+5. Fragaria × ananassa 'Malling Centenary' Yucca aloifolia red experimental
 
 Each Folder contains the weights of the trained models so far. To access the path to the train folder inside the runs/detect folder and then point to the best.pt inside the weights folder. It will look something like this - "runs/detect/train/weights/best.pt" 
 
