@@ -4,8 +4,8 @@ from collections import Counter
 import cv2 as cv
 
 
-img = cv.imread("color_20260514_110931_286513.png")
-model = YOLO("runs/detect/train/weights/best.pt")
+img = cv.imread("color_20260514_110931_286513.png") #Change here with own image
+model = YOLO("runs/detect/train/weights/best.pt") #Weight path (May need Changing if retrained)
 
 result = model.predict(img, save=True)
 labels = result[0].boxes.cls.cpu().numpy()
